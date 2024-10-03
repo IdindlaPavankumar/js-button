@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Changer</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: wheat;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid rgb(152, 152, 207);
+            border-radius: 20px;
+            background-color: wheat;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Click a Button to Change the Image</h1>
+    <div>
+        <!-- image -->
+        <img id="image"
+        src="https://wallpapercave.com/wp/wp9641797.png"
+        alt="Image" width="300" height="200">
+    </div>
+    <!-- buttons -->
+    <div>
+        <button id="button1">Image 1</button>
+        <button id="button2">Image 2</button>
+        <button id="button3">Image 3</button>
+    </div>
+    <script>
+        // image1 function
+        const image = document.getElementById('image');
+        document.getElementById('button1').addEventListener('click', () => {
+            image.src = 'https://www.codingal.com/resources/wp-content/uploads/2023/08/ZA1.png';
+        });
+        //    image2 function
+        document.getElementById('button2').addEventListener('click', () => {
+            image.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQppSVUnjXwug8_2DchWN0DSwAsCgg2ABeQZQ&s';
+        });
+        // image3 function
+        document.getElementById('button3').addEventListener('click', () => {
+            image.src = 'https://miro.medium.com/v2/resize:fit:1400/1*LyZcwuLWv2FArOumCxobpA.png';
+        });
+
+    </script>
+</body>
+
+</html>
